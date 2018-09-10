@@ -4,8 +4,11 @@ OBJCOPY = "arm-none-eabi-objcopy"
 OBJDUMP = "arm-none-eabi-objdump"
 
 .PHONY: all
-
 all: ${TARGET}.bin ${TARGET}.hex ${TARGET}.lst
+
+.PHONY: clean
+clean:
+	xargo clean
 
 ${TARGET}:
 	xargo build --release

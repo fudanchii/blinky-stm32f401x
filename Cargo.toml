@@ -4,4 +4,4 @@ version = "0.1.0"
 authors = ["Nurahmadie <nurahmadie@gmail.com>"]
 
 [dependencies]
-stm32f401x = { path = "../stm32f401x" }
+stm32f401x = { git = "https://github.com/fudanchii/stm32f401x" }

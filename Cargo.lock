@@ -2,10 +2,13 @@
 name = "blinky"
 version = "0.1.0"
 dependencies = [
- "stm32f401x 0.1.0",
+ "stm32f401x 0.1.0 (git+https://github.com/fudanchii/stm32f401x)",
 ]
 
 [[package]]
 name = "stm32f401x"
 version = "0.1.0"
+source = "git+https://github.com/fudanchii/stm32f401x#6f0328029e27fb11f9b5d4c06ab18e20d0c7ef5b"
 
+[metadata]
+"checksum stm32f401x 0.1.0 (git+https://github.com/fudanchii/stm32f401x)" = "<none>"

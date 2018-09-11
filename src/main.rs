@@ -3,9 +3,11 @@
 #![no_main]
 
 extern crate stm32f401x;
-use stm32f401x::nop;
-use stm32f401x::peripherals::gpio;
-use stm32f401x::peripherals::gpio::{Reg, Mode, Pin};
+use stm32f401x::{
+    nop,
+    peripherals::gpio,
+    peripherals::gpio::{Mode, Pin, Reg},
+};
 
 use core::panic::PanicInfo;
 
@@ -15,9 +17,13 @@ pub fn main() -> ! {
 
     loop {
         led.on();
-        for _i in 0..8000000 { nop() }
+        for _i in 0..8000000 {
+            nop()
+        }
         led.off();
-        for _i in 0..4000000 { nop() }
+        for _i in 0..4000000 {
+            nop()
+        }
     }
 }
 

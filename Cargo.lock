@@ -8,7 +8,7 @@ dependencies = [
 [[package]]
 name = "stm32f401x"
 version = "0.1.0"
-source = "git+https://github.com/fudanchii/stm32f401x#f7ac1c018a947fe375d9655fa38baae0f4b0ccf7"
+source = "git+https://github.com/fudanchii/stm32f401x#4d6f2403886012d2f9c58a135699afafa45c82d6"
 
 [metadata]
 "checksum stm32f401x 0.1.0 (git+https://github.com/fudanchii/stm32f401x)" = "<none>"

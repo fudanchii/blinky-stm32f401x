@@ -5,13 +5,13 @@
 extern crate stm32f401x;
 use stm32f401x::nop;
 use stm32f401x::peripherals::gpio;
-use stm32f401x::peripherals::gpio::{Reg, Mode};
+use stm32f401x::peripherals::gpio::{Reg, Mode, Pin};
 
 use core::panic::PanicInfo;
 
 #[no_mangle]
 pub fn main() -> ! {
-    let led = gpio::A::enable(Reg::Moder5, Mode::Out);
+    let led = gpio::A::enable(Reg::ModeR5, Mode::Out);
 
     loop {
         led.on();
